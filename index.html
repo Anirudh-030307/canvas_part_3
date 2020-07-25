@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+<script src="matter.js"></script>
+<script src="sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+    const firebaseConfig = {
+       apiKey: "AIzaSyDzNZqg6Lgm5DxkhKAAyNJnN2Y_Ndre2xI",
+        authDomain: "canvas-f97d9.firebaseapp.com",
+        databaseURL: "https://canvas-f97d9.firebaseio.com",
+        projectId: "canvas-f97d9",
+        storageBucket: "canvas-f97d9.appspot.com",
+        messagingSenderId: "362588599529",
+        appId: "1:362588599529:web:f0882be277dce212af2c78"
+      };
+       //Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+  </head>
+  <body>
+     <div id ="canvascontainer"></div>
+
+     <p>
+         <button id ="saveButton">save</button>
+         <button id ="clearButton">clear</button>
+     </p>   
+
+     <p>
+         <ol id="drawinglist">
+         </ol>
+     </p>
+
+</body></html> 
